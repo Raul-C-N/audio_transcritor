@@ -7,3 +7,7 @@ Código original obtido do canal de Wesley Pinheiro em https://youtu.be/BtwHAvsN
 
 # Environments
 Utilizado Ubuntu versão 22.04.2 LTS.
+
+# loopback-capture-sample
+Usei o seguinte código para gravar o áudio do PC:
+https://github.com/tez3998/loopback-capture-sample.git

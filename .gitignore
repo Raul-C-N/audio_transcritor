@@ -1,1 +1,6 @@
+#ambiente virtual para linux
 audio_transcritor_venv/*
+#ambiente virtual para windows
+VENV/*
+myAudio.mp3
+textFromMp3.txt
