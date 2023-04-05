@@ -27,14 +27,15 @@ import speech_recognition as sr
 engine = sr.Recognizer()
 
 # 4) read mp3 file
-mp3FileName = generateMP3() #É AQUI QUE ESCOLHE O ARQUIVO
+#mp3FileName = generateMP3() #É AQUI QUE ESCOLHE O ARQUIVO
+mp3FileName = 'C:\\Users\\47889004\\Downloads\\Repositorios GIT\\audio_transcritor\\out.wav' #É AQUI QUE ESCOLHE O ARQUIVO
 with sr.AudioFile(mp3FileName) as source:
     print('File is being analised...')
     audio = engine.record(source)
 
 # 5) Extract and print text
 try:
-    text = engine.recognize_google(audio)
+    text = engine.recognize_google(audio, language='pt-BR')
     print(f'Text: {text}')
     txtFile = open('textFromMp3.txt', 'a')
     txtFile.writelines(text)

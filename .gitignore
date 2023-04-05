@@ -4,3 +4,4 @@ audio_transcritor_venv/*
 VENV/*
 myAudio.mp3
 textFromMp3.txt
+out.wav

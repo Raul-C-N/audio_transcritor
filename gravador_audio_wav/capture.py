@@ -3,7 +3,7 @@ import soundfile as sf
 
 OUTPUT_FILE_NAME = "out.wav"    # file name.
 SAMPLE_RATE = 48000              # [Hz]. sampling rate.
-RECORD_SEC = 5                  # [sec]. duration recording audio.
+RECORD_SEC = 120                  # [sec]. duration recording audio.
 
 with sc.get_microphone(id=str(sc.default_speaker().name), include_loopback=True).recorder(samplerate=SAMPLE_RATE) as mic:
     # record audio with loopback from default speaker.
